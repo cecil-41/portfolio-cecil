@@ -643,6 +643,14 @@ section {
   color: #fff;
   text-decoration: none;
 }
+.about .info1{
+  border: 3px solid #47b2e4;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+
 
 .skills .btn-learn-more {
   font-family: "Poppins", sans-serif;
