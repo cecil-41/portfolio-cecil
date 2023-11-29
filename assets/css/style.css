@@ -8,6 +8,11 @@ body {
   color: #444444;
 }
 
+button{
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
 a {
   color: #47b2e4;
   text-decoration: none;
@@ -844,6 +849,26 @@ section {
 }
 
 .skills .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #47b2e4;
+}
+
+.skills .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+.skills .content button {
+  list-style: none;
+  padding: 0;
+}
+
+.skills .content button {
+  padding-bottom: 10px;
+}
+
+.skills .content .accordion i {
   font-size: 20px;
   padding-right: 4px;
   color: #47b2e4;
