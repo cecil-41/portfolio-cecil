@@ -90,8 +90,14 @@
         <div class="row content justify-content-center">
           <div class="col-lg-10 info1 text-center">
             <p class="text-justify text-break lh-base fs-6">
-              I am a double cum laude graduate, having recently obtained an honors degree in Information Systems with distinction from the University of Johannesburg. 
-              I am a passionate Software Development Engineer and firmly believe in the transformative power of code to tackle real-world challenges.
+              I am a <a id="cum-laude" tabindex="0" class="text-primary" data-bs-trigger="focus" 
+              data-bs-toggle="popover" data-bs-title="Definition" data-bs-content="'Cum Laude' is a Latin term used in academia to signify academic Distinction and and is awarded as a recognition of excellence.
+               'Double' denotes that that I have obtained it twice.">double cum laude graduate</a>
+              , having recently 
+              obtained an honors degree in Information Systems with distinction from 
+              the University of Johannesburg. 
+              I am a passionate Software Development Engineer and firmly believe in 
+              the transformative power of code to tackle real-world challenges.
             </p>
             <p class="text-justify text-break lh-base fs-6 ">
               My journey in the realm of technology has been diverse,
@@ -793,7 +799,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
+  <!-- Initializing popovers -->
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    const popover = new bootstrap.Popover('.popover-dismiss', {
+      trigger: 'focus'
+    })
+  </script>
 
 </body>
 
